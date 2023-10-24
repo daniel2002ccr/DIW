@@ -1,0 +1,52 @@
+header{
+    background-color: rgb(223, 228, 231);
+    font-weight: bold;
+    overflow: hidden;
+    padding: 10px 0;
+    
+}
+h2{
+    float: left;
+    margin-left: 20px;
+    font-family: Arial, sans-serif;
+
+}
+nav{
+    background-color: rgb(39, 35, 35);
+}
+.buscador{
+
+    background-color: rgb(113, 189, 0);
+    color: white;
+    border-radius: 5px;
+}
+
+#buscador{
+    margin-top: -10px;
+    float: right;
+}
+
+a{
+    color: white;
+
+}
+body{
+    font-family: 'Open Sans', Arial, sans-serif;
+} 
+
+#enlaces{
+    text-decoration: none;
+    margin: 15px;
+}
+#enlaces:hover{
+
+    background-color: rgb(165, 158, 158);
+}
+/*
+.imagen-container:hover img {
+    filter: brightness(0.8); 
+  }
+  .imagen-container img {
+    transition: filter 0.3s; 
+  }
+  */
