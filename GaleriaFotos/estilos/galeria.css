@@ -13,6 +13,7 @@ h2{
 }
 nav{
     background-color: rgb(39, 35, 35);
+    height: 50px;
 }
 .buscador{
 
@@ -22,31 +23,106 @@ nav{
 }
 
 #buscador{
-    margin-top: -10px;
+    margin-top: -6px;
     float: right;
 }
 
 a{
     color: white;
+    line-height: 50px;
 
 }
+
 body{
     font-family: 'Open Sans', Arial, sans-serif;
+    width: 80%;
+    margin: 0 auto;
+  
+
+
 } 
 
-#enlaces{
+.enlaces{
     text-decoration: none;
-    margin: 15px;
+    padding: 10px 15px;
 }
-#enlaces:hover{
 
+.enlaces:hover{
+    padding: 10px 15px;
     background-color: rgb(165, 158, 158);
+    
 }
-/*
-.imagen-container:hover img {
-    filter: brightness(0.8); 
+
+.imagen:hover{
+    filter: opacity(55%);
+
   }
-  .imagen-container img {
-    transition: filter 0.3s; 
+  #imagen1{
+    float: left;
+    height: 750px;
+    margin: 10px;
   }
-  */
+
+
+  #imagen2{
+    float: inline-start;
+    height: 400px;
+    width: 300px;
+    margin: 10px;
+  }
+  #imagen3{
+    height: 400px;
+    width: 350px;
+    margin: 10px;
+  }
+
+  #imagen4{
+    height: 400px;
+    width: 350px; 
+    margin: 10px;
+  }
+  #imagen5{
+    float: inline-start;
+    margin: 10px;
+    width: 300px;
+
+  }
+  #imagen6{
+    float: inline-start;
+    margin: 10px;
+    width: 350px;
+  }
+  #imagen7{
+    float: inline-start;
+    margin: 10px;
+    width: 350px;
+  }
+ .RRSS{
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin: 10px;
+ }
+ footer{
+  background-color: rgb(39, 35, 35);
+ padding-bottom: 50px;
+  margin-top: 430px;
+  height: 90px;
+  width: 100%;
+ }
+ #RedesSociales{
+  width: 33%;
+  float: left;
+ }
+ #texto{
+  text-align: center;
+  float: left;
+  color: white;
+  width: 33%;
+  margin-top: 15px;
+ }
+#otrosEnlaces{
+  float: left;
+  width: 33%;
+
+}
