@@ -93,6 +93,35 @@ nav{
     float: inline-start;
     margin-left: 50px;
 }
+
+#clientes img {
+    object-fit: cover;
+    border-radius: 60%; 
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    width: 100px; 
+    height: 100px;
+    margin: 10px; 
+    float: left; 
+  }
+  
+ 
+  #clientes p {
+    width: 600px; 
+    float: left; 
+  }
+  
+  #actor{
+    font-weight: bolder;
+    font-style: italic;
+    float: left;
+    clear: both;
+    margin-left: 135px;
+    margin-top: -30px;
+  }
+  
+  #clientes {
+    clear: both; 
+  }
 body{
     font-family: 'Open Sans', Arial, sans-serif;
     width: 100%;
