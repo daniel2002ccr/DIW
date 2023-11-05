@@ -5,12 +5,14 @@ header {
     margin-top: 30px;
     margin-left: 50px;
 }
-.logo{
+
+.logo {
     width: 40px;
     height: 40px;
     float: left;
 }
-h2{
+
+h2 {
     float: left;
     font-family: Arial, sans-serif;
     margin-top: -1px;
@@ -18,7 +20,8 @@ h2{
     width: 33%;
 
 }
-.enlaces{
+
+.enlaces {
     text-decoration: none;
     padding: 5px 10px;
     border: solid black 1px;
@@ -27,26 +30,30 @@ h2{
     font-weight: normal;
 
 }
-.enlaces:hover{
+
+.enlaces:hover {
     background-color: rgb(196, 191, 191);
     padding: 5px 10px;
 
 }
 
-nav{
+nav {
     float: left;
     width: 40%;
 }
-.busqueda{
+
+.busqueda {
     float: left;
-    
+
 }
-.paisaje{
+
+.paisaje {
     width: 87.5%;
     height: 450px;
     margin-left: 50px;
 }
-#boton{
+
+#boton {
     position: absolute;
     background-color: rgb(54, 52, 52);
     color: white;
@@ -54,75 +61,125 @@ nav{
     left: 44%;
     border-radius: 5px;
 }
-#boton:hover{
+
+#boton:hover {
     background-color: rgb(99, 95, 95);
     transition: ease;
 }
-#características{
+
+#características {
     float: inline-start;
-    width: 24.8%; 
+    width: 24.8%;
     margin: 10px;
-    border: 1px solid #000; 
+    border: 1px solid #000;
     border-radius: 5px;
     padding: 10px;
     text-align: center;
     margin-left: 57px;
 }
- 
 
-#características h2{
-    margin-bottom: 10px;  
+
+#características h2 {
+    margin-bottom: 10px;
 
 }
-#características p{
+
+#características p {
     margin: 0;
 
 }
+
 .saber-mas {
     display: block;
     background-color: #000000;
     color: #fff;
     text-decoration: none;
     padding: 5px 10px;
-    margin: 10px auto; 
+    margin: 10px auto;
     border-radius: 5px;
     width: 100px;
-  }
+}
 
-.h3{
+.h3 {
     float: inline-start;
     margin-left: 50px;
 }
 
 #clientes img {
     object-fit: cover;
-    border-radius: 60%; 
+    border-radius: 60%;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
-    width: 100px; 
+    width: 100px;
     height: 100px;
-    margin: 10px; 
-    float: left; 
-  }
-  
- 
-  #clientes p {
-    width: 600px; 
-    float: left; 
-  }
-  
-  #actor{
+    margin: 10px;
+    float: left;
+}
+
+
+#clientes p {
+    width: 600px;
+    float: left;
+}
+
+#actor {
     font-weight: bolder;
     font-style: italic;
     float: left;
     clear: both;
     margin-left: 135px;
     margin-top: -30px;
+}
+
+#clientes {
+    clear: both;
+}
+
+footer {
+    background-color: rgb(21, 51, 83);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    clear: both;
+}
+
+#seccion img{
+    width: 20px;
+    height: 20px;
+}
+
+h4 {
+    color: white;
+}
+
+hr {
+    border: 1px solid rgb(0, 179, 255);
+    width: 500px;
+}
+ul {
+    list-style: none;
+    padding: 0;
   }
   
-  #clientes {
-    clear: both; 
+  ul li {
+    margin: 5px 0;
   }
-body{
+  
+  ul li a {
+    text-decoration: none;
+    color: blue;
+    transition: color 0.3s;
+  }
+  
+  ul li a:hover {
+    color: white;
+  }
+  
+  p {
+    margin: 5px 0;
+  }
+
+body {
     font-family: 'Open Sans', Arial, sans-serif;
     width: 100%;
     margin: 0 auto;
