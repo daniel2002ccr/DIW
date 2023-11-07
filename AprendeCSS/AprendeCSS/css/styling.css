@@ -1,0 +1,49 @@
+#container{
+    width: 80%;
+    margin: auto;
+}
+#brand a{
+    color: rgb(154, 24, 194);
+    text-decoration: none;
+    float: left;
+    margin-bottom: 20px;
+}
+#searchBox{
+    background: linear-gradient(to bottom, #f0eeeeb7 25%, #91ff00 100%);
+    width: 33%;
+    height: 16px;
+    margin-top: -30px;
+    float: right;
+    margin-left: 60px;
+    text-align: center;
+    padding: 25px;
+    float: left;
+
+}
+.submit{
+    background-color: blueviolet;
+    font-weight: bolder;
+    color: white;
+    border: none;
+
+}
+.text{
+    display: inline-block;
+    vertical-align: middle;
+    color: orange;
+}
+#menu{
+    clear: both;
+    background: linear-gradient(to bottom, #f0eeeeb7,#D6EC47);
+}
+#menu ul{
+    list-style-type: none;
+}
+#menu a{
+    text-decoration: none;
+}
+.active{
+    color: purple;
+    font-weight: bolder;
+
+}
