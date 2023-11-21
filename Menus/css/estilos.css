@@ -1,0 +1,144 @@
+body {
+    background: linear-gradient(to right, #c76363 0%, rgb(218, 170, 83) 100%);
+}
+
+#container {
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    height: 100%;
+}
+
+
+.menu {
+    display: flex;
+    background-color: rgba(0, 0, 255, 0.699); 
+    padding: 10px; 
+    justify-content: space-around;
+}
+
+.menu-item {
+    margin-right: 10px; 
+}
+
+.menu-item a {
+    text-decoration: none;  
+    color: white; 
+    padding: 10px;
+    font-size: 18px; 
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: center; 
+    }
+    .menu-item {
+        margin-right: 0; 
+        margin-bottom: 10px; 
+        flex: none; 
+        max-width: 100%; 
+    }
+}
+.menu-iconos {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 255, 0.699); 
+    padding: 10px; 
+    justify-content: space-around; 
+}
+
+.menu-iconos-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; 
+    padding: 10px; 
+    box-sizing: border-box; 
+}
+.menu-iconos-item i {
+    margin-right: 10px; 
+    color: white; 
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+.text-container a {
+    text-decoration: none;
+    color: white; 
+    font-size: 18px; 
+}
+
+.text-container span {
+    color: white; 
+    font-size: 14px; 
+}
+
+@media screen and (max-width: 768px) {
+    .menu-iconos-item {
+        width: calc(50% - 30px);
+    }
+}
+.menu-dropdown {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 255, 0.699);
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.menu-dropdown-item {
+    position: relative;
+    padding: 10px;
+    color: white;
+}
+
+.menu-dropdown-item .lista {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(255, 145, 0);
+    width: 100%;
+}
+
+.menu-dropdown-item:hover .lista {
+    display: block;
+}
+
+.menu-dropdown-item a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.menu-dropdown-item .lista ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-dropdown-item .lista ul li {
+    padding: 8px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-dropdown {
+        flex-direction: column;
+    }
+
+    .menu-dropdown-item {
+        width: 100%;
+    }
+
+    .menu-dropdown-item .lista {
+        position: static;
+        display: block;
+    }
+
+    .menu-dropdown-item .lista ul li {
+        padding: 8px 20px; 
+    }
+}
