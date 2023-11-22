@@ -12,68 +12,72 @@ body {
 
 .menu {
     display: flex;
-    background-color: rgba(0, 0, 255, 0.699); 
-    padding: 10px; 
+    background-color: rgba(0, 0, 255, 0.699);
+    padding: 10px;
     justify-content: space-around;
 }
 
 .menu-item {
-    margin-right: 10px; 
+    margin-right: 10px;
 }
 
 .menu-item a {
-    text-decoration: none;  
-    color: white; 
+    text-decoration: none;
+    color: white;
     padding: 10px;
-    font-size: 18px; 
+    font-size: 18px;
 }
 
 @media screen and (max-width: 768px) {
     .menu {
         flex-direction: column;
-        align-items: center; 
+        align-items: center;
     }
+
     .menu-item {
-        margin-right: 0; 
-        margin-bottom: 10px; 
-        flex: none; 
-        max-width: 100%; 
+        margin-right: 0;
+        margin-bottom: 10px;
+        flex: none;
+        max-width: 100%;
     }
 }
+
 .menu-iconos {
     display: flex;
     flex-wrap: wrap;
-    background-color: rgba(0, 0, 255, 0.699); 
-    padding: 10px; 
-    justify-content: space-around; 
+    background-color: rgba(0, 0, 255, 0.699);
+    padding: 10px;
+    justify-content: space-around;
 }
 
 .menu-iconos-item {
     display: flex;
     align-items: center;
-    margin-bottom: 10px; 
-    padding: 10px; 
-    box-sizing: border-box; 
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
 }
+
 .menu-iconos-item i {
-    margin-right: 10px; 
-    color: white; 
+    margin-right: 10px;
+    color: white;
 }
 
 .text-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; 
+    align-items: flex-start;
 }
+
 .text-container a {
     text-decoration: none;
-    color: white; 
-    font-size: 18px; 
+    color: white;
+    font-size: 18px;
 }
 
 .text-container span {
-    color: white; 
-    font-size: 14px; 
+    color: white;
+    font-size: 14px;
 }
 
 @media screen and (max-width: 768px) {
@@ -81,6 +85,7 @@ body {
         width: calc(50% - 30px);
     }
 }
+
 .menu-dropdown {
     display: flex;
     flex-wrap: wrap;
@@ -136,9 +141,120 @@ body {
     .menu-dropdown-item .lista {
         position: static;
         display: block;
+        background-color: rgba(0, 0, 255, 0.699);
     }
 
     .menu-dropdown-item .lista ul li {
-        padding: 8px 20px; 
+        padding: 8px 20px;
+    }
+    .menu-dropdown-item .lista ul li:hover {
+        padding: 8px 20px;
+        background-color:  rgb(255, 145, 0);
     }
 }
+
+.redes-sociales {
+    background-color: rgba(0, 0, 255, 0.699);
+}
+
+.redes-sociales ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.redes-sociales ul li {
+    margin-left: 30px;
+}
+
+.redes-sociales ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.redes-sociales ul li a[href*='https://www.facebook.com']::before {
+    content: "\f39e";
+    font-family: "Font Awesome 5 Brands";
+    font-size: 24px;
+}
+
+.redes-sociales ul li a[href*='https://www.twitter.com']::before {
+    content: "\f099";
+    font-family: "Font Awesome 5 Brands";
+    font-size: 24px;
+}
+
+.redes-sociales ul li a[href*='https://youtube.com']::before {
+    content: "\f167";
+    font-family: "Font Awesome 5 Brands";
+    font-size: 24px;
+}
+
+.redes-sociales ul li a[href*='https://instagram.com']::before {
+    content: "\f16d";
+    font-family: "Font Awesome 5 Brands";
+    font-size: 24px;
+}
+
+.redes-sociales ul li a[href*='https://pinterest.es']::before {
+    content: "\f0d2";
+    font-family: "Font Awesome 5 Brands";
+    font-size: 24px;
+}
+.menu-color{
+    background-color: rgba(0, 0, 255, 0.699);
+}
+.menu-dropdown-redes {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: flex-start;
+}
+.redes-sociales-menu ul {
+    list-style: none;
+    padding: 0;
+    margin-top: -40px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.redes-sociales-menu ul li {
+    margin-left: 30px;
+}
+
+.redes-sociales-menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+.redes-sociales-menu ul li a[href*='https://www.facebook.com']::before {
+    content: "\f39e";
+    font-family: "Font Awesome 5 Brands";
+    font-size: 24px;
+}
+
+.redes-sociales-menu  ul li a[href*='https://www.twitter.com']::before {
+    content: "\f099";
+    font-family: "Font Awesome 5 Brands";
+    font-size: 24px;
+}
+.redes-sociales-menu  ul li a[href*='https://youtube.com']::before {
+    content: "\f167";
+    font-family: "Font Awesome 5 Brands";
+    font-size: 24px;
+}
+
+.redes-sociales-menu  ul li a[href*='https://instagram.com']::before {
+    content: "\f16d";
+    font-family: "Font Awesome 5 Brands";
+    font-size: 24px;
+}
+
+.redes-sociales-menu  ul li a[href*='https://pinterest.es']::before {
+    content: "\f0d2";
+    font-family: "Font Awesome 5 Brands";
+    font-size: 24px;
+}
+
+
