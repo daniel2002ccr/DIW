@@ -21,6 +21,10 @@ body {
     margin-right: 10px;
 }
 
+.menu-item:hover {
+
+    background-color: rgba(0, 0, 255, 0.5);
+}
 .menu-item a {
     text-decoration: none;
     color: white;
@@ -33,6 +37,11 @@ body {
         flex-direction: column;
         align-items: center;
     }
+    
+.menu-item:hover {
+
+    background-color: rgba(0, 0, 255, 0.5);
+}
 
     .menu-item {
         margin-right: 0;
