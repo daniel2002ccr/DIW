@@ -1,0 +1,42 @@
+.card {
+    flex: 0 1 calc(25% - 20px);
+    margin: 20px 0px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    box-sizing: border-box;
+}
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 -10px;
+
+}
+.comprar {
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 10px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+img {
+    border-radius: 15px;
+}
+@media screen and (min-width: 600px ) and (max-width: 1200px) {
+    .card {
+        flex: 0 1 calc(33.33% - 20px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        flex: 0 1 calc(50% - 20px);
+    }
+}

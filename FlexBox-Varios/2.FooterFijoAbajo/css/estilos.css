@@ -1,0 +1,32 @@
+body {
+    background: linear-gradient(49deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    display: flex;
+    flex-direction: column; /*Alineo el contenido en vertical */
+}
+
+header {
+    background-color: yellow;
+    padding: 20px;
+}
+
+
+#container{
+    width: 75%; /* ancho que le he querido dar al contenedor */
+    margin: 0 auto; /*centro el contenedor de la pagina */
+    min-height: 100vh; /*Altura mínima del viewport*/
+}
+#texto {
+    text-align: center; /*alineo el texto*/
+    background-color: aqua;
+    padding: 20px;
+    max-height: 500px; /*Altura del contenedor que contiene los textos*/
+    overflow: auto; /*para que no se me desborde el texto al hacer mas estrecha la pagina le he agregado una scrollbar*/
+}
+
+footer{
+    color: white;
+    background-color: black;
+    padding: 20px;
+    text-align: center; /*alineo el texto*/
+    font-weight: 900; /*fuente en negrita*/
+}

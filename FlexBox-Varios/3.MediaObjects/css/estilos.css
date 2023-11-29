@@ -1,0 +1,45 @@
+body {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(219deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 20%, rgba(0, 212, 255, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.media-object {
+    display: flex;
+    margin-top: 20px;
+    border: 1px solid #ccc; 
+    background-color: #f0f0f0; 
+}
+
+
+.media-object img {
+    max-width: 150px;
+    height: 120px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+
+.comentario {
+    display: flex;
+    flex-direction: column;
+}
+
+.comentario p {
+    padding: 10px;
+    margin: 0;
+}
+
+
+.comentario-anidado {
+    margin-left: 20px; 
+    background-color: rgb(194, 194, 201);
+    margin-right: 30px;
+}
