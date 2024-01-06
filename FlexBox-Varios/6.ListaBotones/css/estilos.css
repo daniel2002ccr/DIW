@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 40rem;
+    background-color: darksalmon;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.elementos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton{
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 600px){
+    .elementos{
+        flex-direction: row;
+    }
+    .boton{
+        margin-right: 10px;
+        margin-bottom: 0;
+    }
+    .boton:last-child{
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .elementos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boton {
+        margin-bottom: 15px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    .boton:nth-child(1) { order: 2; } 
+    .boton:nth-child(2) { order: 1; } 
+    .boton:nth-child(3) { order: 4; } 
+    .boton:nth-child(4) { order: 3; } 
+}

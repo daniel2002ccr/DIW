@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario de Registro</h1>
+        <form>
+            <div class="formulario">
+                <div class="nombre">
+                    <label for="nombre">Nombre : </label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="apellido">
+                    <label for="apellido">Apellido : </label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
+            </div>
+
+            <div class="formulario">
+                <div class="email">
+                    <label for="email">Email : </label>
+                    <input type="email" id="email" name="email" required>
+
+                </div>
+                <div class="telefono">
+                    <label for="telefono">Teléfono : </label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+            </div>
+            <label for="direccion">Dirección : </label>
+            <input type="text" id="direccion" name="direccion" required>
+            <div class="formulario">
+                <div class="ciudad">
+                    <label for="ciudad">Ciudad : </label>
+                    <select id="ciudad" name="ciudad">
+                        <option value="">Selecciona una ciudad</option>
+                    </select>
+
+                </div>
+                <div class="pais">
+                    <label for="pais">País : </label>
+                    <select id="pais" name="pais">
+                        <option value="">Selecciona un país</option>
+                    </select>
+                </div>
+            </div>
+
+            <label for="fechaNacimiento">Fecha de Nacimiento : </label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+
+            <label for="mensaje">Mensaje : </label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            
+            <input type="checkbox" id="aceptarTerminos" name="aceptarTerminos" required>
+            <label id="terminos">Acepto los términos y condiciones</label>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
