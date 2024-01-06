@@ -65,9 +65,7 @@ button {
         align-items: flex-start;
     }
 
-    .nombre,
-    .email,
-    .ciudad {
+    .nombre, .email, .ciudad {
         width: 48%;
         margin-right: 12%;
     }
@@ -85,19 +83,22 @@ button {
     }
 }
 
-#terminos {
-    margin-left: 4em;
-    width: auto;
-    margin-top: -1.5em;
-}
-
-#aceptarTerminos {
-    margin-left: -20em;
-    margin-top: 10px;
-}
 
 @media screen and (max-width: 901px) {
     .formulario {
         flex-direction: column;
     }
 }
+
+
+#terminos {
+    margin-left: 40px;
+    width: auto;
+    margin-top: -20px;
+}
+
+#aceptarTerminos {
+    margin-left: -280px;
+    margin-top: 10px;
+}
+
