@@ -47,11 +47,12 @@ body {
         flex-direction: column;
         position: relative;
         margin-left: 160px;
-        top: 0;
-        right: 0;
         justify-content: right;
         background-color: black;
         width: 100%;
+        top: 0;
+        right: 0;
+        
     }
 
     .links.block {
