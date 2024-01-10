@@ -1,0 +1,57 @@
+.container-media{
+    display: grid;
+    grid-template-areas: "titulo titulo titulo titulo"
+    "imagen descripcion descripcion descripcion";
+    gap: 1em;
+    margin: 0 auto;
+    max-width: 800px;
+}
+.titulo{
+    grid-area: titulo;
+}
+
+.imagen{
+    grid-area: imagen;
+    width: 20em;
+}
+.descripcion{
+    grid-area: descripcion;
+}
+.container-media2{
+    display: grid;
+    grid-template-areas: "titulo2"
+                        "eslogan"
+                        "info"
+                        "imagen2"
+                        "entrada";
+    gap: 1em;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.titulo2{
+    grid-area: titulo2;
+}
+.slogan{
+
+    grid-area: eslogan;
+}
+.info{
+    grid-area: info;
+}
+.imagen2{
+    grid-area: imagen2;
+}
+.entrada{
+    grid-area: entrada;
+}
+
+@media screen and (min-width: 768px) {
+    .container-media2{
+        grid-template-areas: "titulo2 titulo2"
+                            "imagen2 slogan"
+                            "imagen2 info"
+                            "entrada entrada";
+                            
+    }
+}

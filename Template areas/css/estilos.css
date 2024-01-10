@@ -1,0 +1,31 @@
+.container{
+    display: grid;
+    grid: 100px auto 100px / repeat(4, 25%);
+    height: 100vh;
+    grid-template-areas: "header header header header"
+                         "principal principal principal sidebar"
+                          "footer footer footer footer";  
+gap: 10px;
+}               
+.header{
+    background-color: rgb(197, 228, 255);
+    /*grid-column: 1/5; */
+    grid-area: header;
+}
+
+.main{
+    background-color: crimson;
+  /*  grid-column: 1/4;*/
+  grid-area: principal;
+}
+
+.aside{
+    background-color: slateblue;
+    grid-area: sidebar;
+}
+
+.footer{
+    background-color: peachpuff;
+    /*grid-column: 1/5;*/
+    grid-area: footer;
+}

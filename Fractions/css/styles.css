@@ -1,0 +1,17 @@
+.servicios{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat (3, 33,3%);
+    height: 300px;
+    gap: 10px;
+}
+
+.servicio1{
+    background-color: salmon;
+}
+.servicio2{
+    background-color: powderblue;
+}
+.servicio3{
+    background-color: pink;
+}
