@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cronograma {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+    align-items: center;
+}
+
+.evento {
+    display: grid;
+    grid-template-columns: auto 20px 1fr;
+    align-items: center;
+    background-color: #95a5a6;
+    width: 20%;
+}
+
+.fecha {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.conector {
+    width: 20px;
+    height: 20px;
+    background-color: #3ad1dc;
+    border-radius: 50%;
+}
+
+.descripcion {
+    padding: 10px;
+}
