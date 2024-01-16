@@ -1,0 +1,53 @@
+.container{
+    display: grid;
+    grid: 100px auto 100px / repeat(3, 33.33%);
+    height: 100vh;
+    
+}     
+
+.header{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    background-color: rgb(43, 42, 42);
+    grid-column: 1/4;
+    grid-row: 1/2;
+    
+}
+nav{
+    grid-column: 2/4;
+    justify-content: center;
+    align-self: center;
+    
+}
+.enlace{
+    text-decoration: none;
+    color: white;
+    padding: 80px;
+}
+
+.busqueda{
+    grid-column: 4/4;
+    justify-content: right;
+    align-self: center;
+ 
+}
+.logo{
+    justify-content: start;
+    align-self: center;
+}
+
+.main{
+    grid-row: 2/3;
+    grid-column: 1/4;
+}
+
+footer{
+    background-color: rgb(43, 42, 42);
+    grid-column: 1/4;
+    display: grid;
+}
+.parrafo{
+    justify-content: space-around;
+    align-self: center;
+
+}

@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
+    display: grid;
+    gap: 15px;
+}
+
+.formulario {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input, select, textarea {
+    width: calc(100% - 2em);
+    padding: 8px;
+}
+
+.divCheckbox {
+    display: grid;
+    gap: 15px;
+    align-items: start; 
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border: none;
+}
+
+@media screen and (min-width: 901px) {
+    .formulario {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12%;
+        align-items: start;
+    }
+
+    .nombre, .email, .ciudad {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .nombre {
+        grid-template-columns: 1fr;
+    }
+
+    label {
+        text-align: left;
+    }
+
+    #direccion {
+        width: calc(100% - 2em);
+    }
+}
+
+@media screen and (max-width: 901px) {
+    .formulario {
+        grid-template-columns: 1fr;
+    }
+}
+
+#terminos {
+    margin-left: 0;
+    width: auto;
+    margin-top: -20px;
+}
+
+#aceptarTerminos {
+    margin-left: 220px;
+    margin-top: 10px;
+}
