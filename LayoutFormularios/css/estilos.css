@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    gap: 20px;
+}
+fieldset {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+p {
+    grid-column: span 2;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+progress {
+    appearance: none; 
+    width: 70%;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #ddd;
+    border-radius: 40px;  
+}
+
+progress::-webkit-progress-value {
+    background-color: #3498db; 
+    border-radius: 40px; 
+}
+
+.checkbox-list,
+.radio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.checkbox-list label,
+.radio-list label {
+    flex: 1;
+}
+
+p:last-child {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-content: center;
+}
+
+button {
+    margin: 0;
+    max-width: 100px;
+}
+button:first-child {
+    justify-self: end; 
+}
+
+@media screen and (max-width: 480px) {
+    form {
+        grid: auto / 100%;
+    }
+
+    p:last-child {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Ajuste de fieldsets en pantallas pequeñas */
+    fieldset {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+}
