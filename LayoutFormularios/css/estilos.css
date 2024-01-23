@@ -88,6 +88,9 @@ progress::-webkit-progress-value {
     flex: 1;
 }
 
+select{
+    width: 40%;
+}
 
 button {
     margin: 0;
