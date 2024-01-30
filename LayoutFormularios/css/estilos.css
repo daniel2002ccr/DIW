@@ -60,10 +60,18 @@ li input[type="radio"] {
     height: 16px; 
     justify-self: end;
 }
+form > fieldset > p:first-of-type{
+    display: flex;
+    justify-content: space-between;
+}
+
+form > fieldset:first-child > p:first-of-type{
+    flex: 1;
+}
 
 progress {
     appearance: none; 
-    width: 70%;
+    width: 40%;
 }
 
 progress::-webkit-progress-bar {
