@@ -7,60 +7,205 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
-    <header>
-        <div class="sobre-mi">
-            <h2>José Daniel Vegas Martín</h2>
-            <div class="punto"> &middot; </div>
-            <h3>Desarollador de aplicaciones web</h3>
-        </div>
-        <div class="menu-iconos">
-            <div class="menu-iconos-item">
-                <i class="fas fa-home"></i>
-                <div class="text-container">
-                    <a href="#">Portafolio</a>
-                    <span>Portafolio</span>
-                </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 justify-content-start align-items-center">
+                <h2>José Daniel Vegas Martín <span class="gris">· Desarrollador de aplicaciones web</span></h2>
             </div>
-            <div class="menu-iconos-item">
+            <div class="row justify-content-between align-items-center">
+                <a href="#">Portafolio</a>
+                <i class="fas fa-briefcase"></i>
+                <a href="#">Acerca de</a>
                 <i class="fas fa-user"></i>
-                <div class="text-container">
-                    <a href="#">Nosotros</a>
-                    <span>Sobre Nosotros</span>
+                <a href="#">Contacto</a>
+                <i class="fas fa-envelope"></i>
+            </div>
+        </div>
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/slide1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/slide2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/slide3.jpg" class="d-block w-100" alt="...">
                 </div>
             </div>
-            <div class="menu-iconos-item">
-                <i class="fas fa-cogs"></i>
-                <div class="text-container">
-                    <a href="#">Servicios</a>
-                    <span>Nuestros Servicios</span>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="container mt-5">
+            <div class="row mt-4">
+                <!-- Primera fila con dos columnas -->
+                <div class="col-md-6">
+                    <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage1">
+                        <div class="proyecto-container">
+                            <img src="./img/img-1.jpg" class="proyecto-img" alt="Proyecto 1">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage2">
+                        <div class="proyecto-container">
+                            <img src="./img/img-2.jpg" class="proyecto-img" alt="Proyecto 2">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <!-- Segunda fila con dos columnas -->
+                <div class="col-md-6">
+                    <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage3">
+                        <div class="proyecto-container">
+                            <img src="./img/img-3.jpg" class="proyecto-img" alt="Proyecto 3">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage4">
+                        <div class="proyecto-container">
+                            <img src="./img/img-4.jpg" class="proyecto-img" alt="Proyecto 4">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <!-- Tercera fila con tres columnas -->
+                <div class="col-md-4">
+                    <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage5">
+                        <div class="proyecto-container">
+                            <img src="./img/img-5.jpg" class="img-fluid" alt="Proyecto 5">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage6">
+                        <div class="proyecto-container">
+                            <img src="./img/img-6.jpg" class="img-fluid" alt="Proyecto 6">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage7">
+                        <div class="proyecto-container">
+                            <img src="./img/img-7.jpg" class="img-fluid" alt="Proyecto 7">
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Imagen 1 -->
+        <div tabindex="-1" aria-labelledby="modalImage1" aria-hidden="true" class="modal fade" id="modalImage1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <img src="./img/img-1.jpg" alt="Proyecto 1">
+                </div>
+            
+            </div>
+        </div>
+        <div tabindex="-1" aria-labelledby="modalImage1" aria-hidden="true" class="modal fade" id="modalImage2">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <img src="./img/img-2.jpg" alt="Proyecto 2">
+                </div>
+            
+            </div>
+        </div>
+        <div tabindex="-1" aria-labelledby="modalImage1" aria-hidden="true" class="modal fade" id="modalImage3">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <img src="./img/img-3.jpg" alt="Proyecto 3">
+                </div>
+            
+            </div>
+        </div>
+        <div tabindex="-1" aria-labelledby="modalImage1" aria-hidden="true" class="modal fade" id="modalImage4">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <img src="./img/img-4.jpg" alt="Proyecto 4">
+                </div>
+            
+            </div>
+        </div>
+        <div tabindex="-1" aria-labelledby="modalImage1" aria-hidden="true" class="modal fade" id="modalImage5">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <img src="./img/img-5.jpg" alt="Proyecto 5">
+                </div>
+            
+            </div>
+        </div>
+        <div tabindex="-1" aria-labelledby="modalImage1" aria-hidden="true" class="modal fade" id="modalImage6">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <img src="./img/img-6.jpg" alt="Proyecto 6">
+                </div>
+            
+            </div>
+        </div>
+        <div tabindex="-1" aria-labelledby="modalImage1" aria-hidden="true" class="modal fade" id="modalImage7">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <img src="./img/img-7.jpg" alt="Proyecto 7">
+                </div>
+            
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="foto-container">
+                        <img src="./img/" class="foto-img" alt="Tu Foto">
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <!-- Texto y barras de progreso -->
+                    <div class="habilidades">
+                        <h3>Mi Presentación</h3>
+                        <p>¡Hola! Soy [Tu Nombre], un apasionado desarrollador de aplicaciones web.</p>
+                        <!-- Barras de progreso -->
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0"
+                                aria-valuemax="100">HTML/CSS</div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0"
+                                aria-valuemax="100">JavaScript</div>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0"
+                                aria-valuemax="100">React</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </header>
-    <main>
-        <section class="slider">
-            
-        </section>
-
-        <section class="portafolio">
-            
-        </section>
-
-        <section class="skills">
-            
-        </section>
-
-        <section class="contacto">
-            
-        </section>
-    </main>
-
-    <footer>
-       
-    </footer>
 </body>
 
 </html>
