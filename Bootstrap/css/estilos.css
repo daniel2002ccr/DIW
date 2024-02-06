@@ -25,6 +25,13 @@
     padding: 15px;
     transition: 0.5s;
 }
+.boton1, .boton2, .boton3{
+    text-align: center;
+    padding: 10px 10px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
 
 .boton1:hover {
     background-color: rgb(2, 139, 194); 
@@ -110,6 +117,7 @@
 }
 .contacto{
     color: rgb(46, 46, 114);
+    text-align: center;
 }
 .bg-cyan {
     background-color: rgb(0, 166, 255); 
