@@ -12,29 +12,27 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
-<body>
+<body class="body">
     <div class="container">
-        <div class="header d-flex align-items-center">
-            <div class="col-4">
-                <strong class="nombre">José Daniel Vegas Martín</strong><small class="text-muted gris"><strong> ·
-                        Desarrollador de aplicaciones web</strong></small>
+        <div class="row justify-content-between align-items-center">
+            <div class="col">
+                <strong class="nombre">José Daniel Vegas Martín</strong>
+                <small class="text-muted gris"><strong> · Desarrollador de aplicaciones web</strong></small>
             </div>
-            <div class="row justify-content-end ms-auto">
-                <div class="boton1 col-auto">
+            <div class="col-auto d-flex">
+                <div class="boton1">
                     Portafolio
-                    <div class="col-auto offset-4"><i class="fas fa-briefcase"></i></div>
+                    <div class="col-auto ms-4"><i class="fas fa-briefcase"></i></div>
                 </div>
-                <div class="boton2 col-auto">
+                <div class="boton2">
                     Acerca de
-                    <div class="col-auto offset-4"><i class="fas fa-user"></i></div>
+                    <div class="col-auto ms-4"><i class="fas fa-user"></i></div>
                 </div>
-                <div class="boton3 col-auto">
+                <div class="boton3">
                     Contacto
-                    <div class="col-auto offset-4"><i class="fas fa-envelope"></i></div>
+                    <div class="col-auto ms-4"><i class="fas fa-envelope"></i></div>
                 </div>
-
             </div>
-
         </div>
         <div id="carouselExampleIndicators" class="carousel slide">
             <div class="carousel-indicators">
@@ -69,238 +67,235 @@
         </div>
         <br>
         <br>
-        <div class="container">
-            <div class="row">
-                <div class="linea"></div>
-            </div>
-            <br>
-            <div class="row justify-content-center">
-                <div class="titulo col-2">
-                    <h2 class="display-6 azul">Portafolio</h2>
-                </div>
-            </div>
-            <div class="container mt-5">
-                <div class="row mt-4">
-                    <!-- Primera fila con dos columnas -->
-                    <div class="col-md-8">
-                        <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage1">
-                            <div class="proyecto-container">
-                                <img src="./img/img-1.jpg" class="proyecto-img" alt="Proyecto 1">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage2">
-                            <div class="proyecto-container">
-                                <img src="./img/img-2.jpg" class="proyecto-img" alt="Proyecto 2">
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="row mt-4">
-                    <!-- Segunda fila con dos columnas -->
-                    <div class="col-md-4">
-                        <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage3">
-                            <div class="proyecto-container">
-                                <img src="./img/img-3.jpg" class="proyecto-img" alt="Proyecto 3">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-8">
-                        <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage4">
-                            <div class="proyecto-container">
-                                <img src="./img/img-4.jpg" class="proyecto-img" alt="Proyecto 4">
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="row mt-4">
-                    <!-- Tercera fila con tres columnas -->
-                    <div class="col-md-4">
-                        <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage5">
-                            <div class="proyecto-container">
-                                <img src="./img/img-5.jpg" class="img-fluid" alt="Proyecto 5">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage6">
-                            <div class="proyecto-container">
-                                <img src="./img/img-6.jpg" class="img-fluid" alt="Proyecto 6">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage7">
-                            <div class="proyecto-container">
-                                <img src="./img/img-7.jpg" class="img-fluid" alt="Proyecto 7">
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Imagen 1 -->
-            <div tabindex="-1" aria-labelledby="modalImage1" aria-hidden="true" class="modal fade" id="modalImage1">
-                <div class="modal-dialog modal-lg modal-dialog-centered">
-                    <div class="modal-content">
-                        <img src="./img/img-1.jpg" alt="Proyecto 1">
-                    </div>
-
-                </div>
-            </div>
-            <div tabindex="-1" aria-labelledby="modalImage1" aria-hidden="true" class="modal fade" id="modalImage2">
-                <div class="modal-dialog modal-lg modal-dialog-centered">
-                    <div class="modal-content">
-                        <img src="./img/img-2.jpg" alt="Proyecto 2">
-                    </div>
-
-                </div>
-            </div>
-            <div tabindex="-1" aria-labelledby="modalImage1" aria-hidden="true" class="modal fade" id="modalImage3">
-                <div class="modal-dialog modal-lg modal-dialog-centered">
-                    <div class="modal-content">
-                        <img src="./img/img-3.jpg" alt="Proyecto 3">
-                    </div>
-
-                </div>
-            </div>
-            <div tabindex="-1" aria-labelledby="modalImage1" aria-hidden="true" class="modal fade" id="modalImage4">
-                <div class="modal-dialog modal-lg modal-dialog-centered">
-                    <div class="modal-content">
-                        <img src="./img/img-4.jpg" alt="Proyecto 4">
-                    </div>
-
-                </div>
-            </div>
-            <div tabindex="-1" aria-labelledby="modalImage1" aria-hidden="true" class="modal fade" id="modalImage5">
-                <div class="modal-dialog modal-lg modal-dialog-centered">
-                    <div class="modal-content">
-                        <img src="./img/img-5.jpg" alt="Proyecto 5">
-                    </div>
-
-                </div>
-            </div>
-            <div tabindex="-1" aria-labelledby="modalImage1" aria-hidden="true" class="modal fade" id="modalImage6">
-                <div class="modal-dialog modal-lg modal-dialog-centered">
-                    <div class="modal-content">
-                        <img src="./img/img-6.jpg" alt="Proyecto 6">
-                    </div>
-
-                </div>
-            </div>
-            <div tabindex="-1" aria-labelledby="modalImage1" aria-hidden="true" class="modal fade" id="modalImage7">
-                <div class="modal-dialog modal-lg modal-dialog-centered">
-                    <div class="modal-content">
-                        <img src="./img/img-7.jpg" alt="Proyecto 7">
-                    </div>
-
-                </div>
-            </div>
-            <div class="container mt-5">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="foto-container">
-                            <img src="./img/foto_perfil.jpg" class="foto-img" alt="Tu Foto">
-                        </div>
-                        <p class="nombre">José Daniel Vegas Martín</p>
-                    </div>
-                    <div class="col-md-8">
-                        <!-- Texto y barras de progreso -->
-                        <div class="habilidades">
-                            <h3 class="azul">Acerca de</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut
-                                labore et dolore magna aliqua.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut
-                                labore et dolore magna aliqua.</p>
-                            <!-- Barras de progreso -->
-                            <strong class="azul">HTML/CSS:</strong>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60"
-                                    aria-valuemin="0" aria-valuemax="100">60%</div>
-                            </div>
-                            <strong class="azul">JAVASCRIPT</strong>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="40"
-                                    aria-valuemin="0" aria-valuemax="100">40%</div>
-                            </div>
-                            <strong class="azul">JAVA</strong>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80"
-                                    aria-valuemin="0" aria-valuemax="100">80%</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <br>
-            <div class="container">
-                <div class="row">
-                    <div class="linea2"></div>
-                </div>
-                <br>
-                <div class="row justify-content-center">
-                    <div class="titulo col-2">
-                        <h2 class="display-6 contacto">Contacto</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="container mt-5">
-                <div class="row">
-                    <div class="col-md-6">
-                        <input type="text" class="form-control" placeholder="Nombre">
-                    </div>
-                    <div class="col-md-6">
-                        <input type="text" class="form-control" placeholder="Correo">
-                    </div>
-                </div>
-                <div class="row mt-3">
-                    <div class="col-md-12">
-                        <textarea class="form-control" rows="5" placeholder="Mensaje"></textarea>
-                    </div>
-                </div>
-                <div class="row mt-3">
-                    <div class="col-md-12 text-center">
-                        <button type="button" class="btn btn-primary">Enviar</button>
-                    </div>
-                </div>
-            </div>
-            <br><br>
-            <div class="container">
-                <div class="row">
-                    <div class="linea2"></div>
-                </div>
-                <br>
+        <div class="row">
+            <div class="linea"></div>
+        </div>
+        <br>
+        <div class="row justify-content-center">
+            <div class="titulo col-2">
+                <h2 class="display-6 azul">Portafolio</h2>
             </div>
         </div>
         <div class="container mt-5">
-            <div class="row justify-content-center">
-                <div class="col-auto">
-                    <a href="#" class="red-social-link">
-                        <div class="red-social-icon bg-cyan">
-                            <i class="fab fa-twitter rrss"></i>
-                        </div>
-                    </a>
+            <div class="row mt-4">
+          
+                <div class="col-md-8">
+                    <div class="proyecto-container">
+                        <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage1" class="efecto">
 
+                            <img src="./img/img-1.jpg" class="img-fluid" alt="Proyecto 1">
+                        </a>
+                    </div>
                 </div>
-                <div class="col-auto">
-                    <a href="#" class="red-social-link">
-                        <div class="red-social-icon bg-morado">
-                            <i class="fab fa-instagram rrss"></i>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-auto">
-                    <a href="#" class="red-social-link">
-                        <div class="red-social-icon bg-azul">
-                            <i class="fab fa-facebook-f rrss"></i>
-                        </div>
-                    </a>
+                <div class="col-md-4">
+                    <div class="proyecto-container">
+                        <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage2" class="efecto">
+                            <img src="./img/img-2.jpg" class="img-fluid" alt="Proyecto 2">
+                        </a>
+                    </div>
                 </div>
             </div>
+            <div class="row mt-4">
+                
+                <div class="col-md-4">
+                    <div class="proyecto-container">
+                        <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage3" class="efecto">
+                            <img src="./img/img-3.jpg" class="img-fluid" alt="Proyecto 3">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="proyecto-container">
+                        <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage4" class="efecto">
+                            <img src="./img/img-4.jpg" class="img-fluid" alt="Proyecto 4">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                
+                <div class="col-md-4">
+                    <div class="proyecto-container">
+                        <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage5" class="efecto">
+                            <img src="./img/img-5.jpg" class="img-fluid" alt="Proyecto 5">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="proyecto-container">
+                        <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage6" class="efecto">
+                            <img src="./img/img-6.jpg" class="img-fluid" alt="Proyecto 6">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="proyecto-container">
+                        <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage7" class="efecto">
+                            <img src="./img/img-7.jpg" class="img-fluid" alt="Proyecto 7">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Imagen 1 -->
+        <div tabindex="-1" aria-labelledby="modalImage1" aria-hidden="true" class="modal fade" id="modalImage1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <img src="./img/img-1.jpg" alt="Proyecto 1">
+                </div>
+
+            </div>
+        </div>
+        <div tabindex="-1" aria-labelledby="modalImage1" aria-hidden="true" class="modal fade" id="modalImage2">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <img src="./img/img-2.jpg" alt="Proyecto 2">
+                </div>
+
+            </div>
+        </div>
+        <div tabindex="-1" aria-labelledby="modalImage1" aria-hidden="true" class="modal fade" id="modalImage3">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <img src="./img/img-3.jpg" alt="Proyecto 3">
+                </div>
+
+            </div>
+        </div>
+        <div tabindex="-1" aria-labelledby="modalImage1" aria-hidden="true" class="modal fade" id="modalImage4">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <img src="./img/img-4.jpg" alt="Proyecto 4">
+                </div>
+
+            </div>
+        </div>
+        <div tabindex="-1" aria-labelledby="modalImage1" aria-hidden="true" class="modal fade" id="modalImage5">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <img src="./img/img-5.jpg" alt="Proyecto 5">
+                </div>
+
+            </div>
+        </div>
+        <div tabindex="-1" aria-labelledby="modalImage1" aria-hidden="true" class="modal fade" id="modalImage6">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <img src="./img/img-6.jpg" alt="Proyecto 6">
+                </div>
+
+            </div>
+        </div>
+        <div tabindex="-1" aria-labelledby="modalImage1" aria-hidden="true" class="modal fade" id="modalImage7">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <img src="./img/img-7.jpg" alt="Proyecto 7">
+                </div>
+
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <div class="foto-container text-center">
+                        <img src="./img/foto_perfil.jpg" class="foto-img" alt="Tu Foto">
+                    </div>
+                    <p class="nombre">José Daniel Vegas Martín</p>
+                </div>
+                <div class="col-md-8">
+                    <!-- Texto y barras de progreso -->
+                    <div class="habilidades">
+                        <h3 class="azul">Acerca de</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut
+                            labore et dolore magna aliqua.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut
+                            labore et dolore magna aliqua.</p>
+                        <!-- Barras de progreso -->
+                        <strong class="azul">HTML/CSS:</strong>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60"
+                                aria-valuemin="0" aria-valuemax="100">60%</div>
+                        </div>
+                        <strong class="azul">JAVASCRIPT</strong>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="40"
+                                aria-valuemin="0" aria-valuemax="100">40%</div>
+                        </div>
+                        <strong class="azul">JAVA</strong>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80"
+                                aria-valuemin="0" aria-valuemax="100">80%</div>
+                        </div>
+                        <strong class="azul">MYSQL</strong>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                                aria-valuemin="0" aria-valuemax="100">100%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="linea2"></div>
+        </div>
+        <br>
+        <div class="row justify-content-center">
+            <div class="titulo col-2">
+                <h2 class="display-6 contacto">Contacto</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Nombre">
+            </div>
+            <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Correo">
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-12">
+                <textarea class="form-control" rows="5" placeholder="Mensaje"></textarea>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-12 text-center">
+                <button type="button" class="btn btn-primary">Enviar</button>
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="linea2"></div>
+        </div>
+        <br>
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <a href="#" class="red-social-link">
+                    <div class="red-social-icon bg-cyan">
+                        <i class="fab fa-twitter rrss"></i>
+                    </div>
+                </a>
+
+            </div>
+            <div class="col-auto">
+                <a href="#" class="red-social-link">
+                    <div class="red-social-icon bg-morado">
+                        <i class="fab fa-instagram rrss"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="col-auto">
+                <a href="#" class="red-social-link">
+                    <div class="red-social-icon bg-azul">
+                        <i class="fab fa-facebook-f rrss"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
 </body>
 
 </html>
