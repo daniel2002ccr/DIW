@@ -1,0 +1,51 @@
+$color-primario: royalblue;
+$color-secundario: orange;
+$color-terciario: dodgerblue;
+
+$font-grande: 40px;
+$font-medio: 30px;
+$font-pequeno: 20px;
+
+
+.heading{
+    color: $color-primario;
+    font-size: $font-grande;
+    background-color: $color-secundario;
+    text-align: end;
+}
+
+@mixin estilosCabecera($tamanoFuente: 50px){
+    font-size: $tamanoFuente;
+    color: $color-secundario;
+    text-align: center;
+}
+
+@mixin transicion($parametros...){
+    transition: $parametros;
+}
+
+.nav{
+    background-color: $color-primario;
+    ul li{
+        list-style: none;
+        a{
+            text-decoration: none;
+            color: $color-secundario;
+            &:hover{
+                color: red;
+            }
+        }
+    }
+}
+
+.banner h1{
+    @extend .heading;
+}
+
+.footer h3{
+   /* @include transicion(color .5s, background-color 4s);
+    @include estilosCabecera(); */
+
+    @extend .heading;
+}
+
