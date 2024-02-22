@@ -1,41 +1,102 @@
-header .logo img {
-  height: 50px; }
-
 body {
   font-family: 'Sedgwick Ave', cursive;
   margin: 0;
   padding: 0;
-  background-color: #a5a5a5; }
+  background-color: #f3f3f3; }
 
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px; }
+  header .logo img {
+    height: 50px; }
   header nav ul {
     list-style-type: none;
     margin: 0;
-    padding: 0; }
-  header nav li {
-    display: inline-block; }
-  header nav a {
-    display: block;
-    padding: 6px 12px;
-    text-decoration: none;
-    color: black; }
+    padding: 0;
+    display: flex;
+    align-items: center; }
+    header nav ul li {
+      margin-right: 20px; }
+      header nav ul li:last-child {
+        margin-right: 0; }
+      header nav ul li a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold; }
+      header nav ul li:hover a {
+        color: gray; }
 
 .container {
   text-align: center; }
-  .container h2 {
-    margin-top: 30px; }
-  .container nav ul {
+  .container nav.nav {
     display: flex;
     justify-content: center;
-    margin-top: 20px; }
-    .container nav ul li {
-      margin-right: 20px; }
-      .container nav ul li:last-child {
-        margin-right: 0; }
+    padding: 10px 0; }
+    .container nav.nav ul {
+      display: flex;
+      list-style-type: none;
+      padding: 0;
+      margin: 0; }
+      .container nav.nav ul li {
+        position: relative;
+        margin: 0 20px; }
+        .container nav.nav ul li a {
+          color: black;
+          text-decoration: none; }
+        .container nav.nav ul li:hover a {
+          color: gray; }
+        .container nav.nav ul li:hover .submenu {
+          display: block; }
+        .container nav.nav ul li .submenu {
+          display: none;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          background-color: white;
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+          z-index: 1;
+          padding: 10px; }
+          .container nav.nav ul li .submenu li a {
+            display: block;
+            color: black;
+            font-size: 13px; }
+            .container nav.nav ul li .submenu li a:hover {
+              color: gray; }
+          .container nav.nav ul li .submenu li:not(:last-child) {
+            margin-bottom: 15px; }
+
+.figuras {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  margin-top: 20px; }
+  .figuras img {
+    width: 100%;
+    height: 600px;
+    display: block; }
+
+.container .button-more {
+  background-color: #312b2b;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px; }
+  .container .button-more:hover {
+    transform: scale(1.2); }
+  .container .button-more:hover span {
+    color: white; }
+  .container .button-more span {
+    margin-right: 5px; }
+
+header .logo img {
+  height: 50px; }
 
 nav li:nth-child(2) {
   position: relative; }
@@ -57,3 +118,69 @@ nav li:nth-child(2) {
           margin-bottom: 0; }
   nav li:nth-child(2):hover .dropdown-menu {
     display: block; }
+
+.carousel {
+  position: relative; }
+  .carousel .wrapper {
+    width: 1550px;
+    height: 800px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
+    margin: 5rem auto;
+    overflow: hidden; }
+  .carousel .wrapper-holder {
+    display: grid;
+    grid-template-columns: repeat(5, 100%);
+    height: 100%;
+    width: 100%;
+    animation: slider 30s ease-in-out infinite alternate; }
+  .carousel .slide {
+    background-position: center;
+    background-size: cover;
+    overflow: hidden; }
+  .carousel #slider-1 {
+    background-image: url(../../images/img1.jpg); }
+  .carousel #slider-2 {
+    background-image: url(../../images/img2.jpg); }
+  .carousel #slider-3 {
+    background-image: url(../../images/img3.jpg); }
+  .carousel #slider-4 {
+    background-image: url(../../images/img4.jpg); }
+  .carousel #slider-5 {
+    background-image: url(../../images/img5.jpg); }
+  .carousel .button-holder {
+    position: absolute;
+    left: 45%;
+    bottom: 0%; }
+    .carousel .button-holder .button {
+      background-color: white;
+      width: 15px;
+      height: 15px;
+      border-radius: 15px;
+      display: inline-block;
+      margin: .3rem; }
+    .carousel .button-holder:hover {
+      box-shadow: 0px 0px 7px 4px rgba(0, 0, 0, 0.6); }
+
+@keyframes slider {
+  0% {
+    transform: translateX(0%); }
+  10% {
+    transform: translateX(-100%); }
+  20% {
+    transform: translateX(-100%); }
+  30% {
+    transform: translateX(-200%); }
+  40% {
+    transform: translateX(-200%); }
+  50% {
+    transform: translateX(-200%); }
+  60% {
+    transform: translateX(-300%); }
+  70% {
+    transform: translateX(-300%); }
+  80% {
+    transform: translateX(-300%); }
+  90% {
+    transform: translateX(0%); }
+  100% {
+    transform: translateX(0%); } }

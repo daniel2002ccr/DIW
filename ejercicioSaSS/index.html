@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -19,21 +21,21 @@
                 <li><a href="#"><i class="fas fa-search"></i> Buscar</a></li>
                 <li><a href="#">Contacto</a></li>
                 <li><a href="#">Sign In</a></li>
-                <li><a href="#"><i class="fas fa-shopping-cart"></i> Carrito</a></li>
-                <li><a href="#" class="cart-count">(0)</a></li>
+                <li><a href="#" class="cart-count"><i class="fas fa-shopping-cart"></i>(0)</a></li>
+                <li></li>
             </ul>
         </nav>
     </header>
     <div class="container">
         <h2>Tienda de comics</h2>
-        <nav>
+        <nav class="nav">
             <ul>
                 <li><a href="#">Tienda</a></li>
-                <li><a href="#">Ideas de regalo</a>
+                <li><a href="#">Ideas de regalo <i class="fas fa-chevron-down"></i></a>
                     <ul class="submenu">
-                        <li><a href="#">Opción 1</a></li>
-                        <li><a href="#">Opción 2</a></li>
-                        <li><a href="#">Opción 3</a></li>
+                        <li><a href="#">Menos de 25€</a></li>
+                        <li><a href="#">25€ - 30€</a></li>
+                        <li><a href="#">Más de 50€</a></li>
                     </ul>
                 </li>
                 <li><a href="#">Sobre Nosotros</a></li>
@@ -42,5 +44,35 @@
             </ul>
         </nav>
     </div>
+    <div class="carousel">
+        <div class="wrapper">
+            <div class="wrapper-holder">
+                <div id="slider-1"><img src="./images/img1.jpg" alt="imagen 1"></div>
+                <div id="slider-2"><img src="./images/img2.jpg" alt="imagen 2"></div>
+                <div id="slider-3"><img src="./images/img3.jpg" alt="imagen 3"></div>
+                <div id="slider-4"><img src="./images/img4.jpg" alt="imagen 4"></div>
+                <div id="slider-5"><img src="./images/img5.jpg" alt="imagen 5"></div>
+            </div>
+        </div>
+        <div class="button-holder">
+            <a href="#slider-1" class="button"></a>
+            <a href="#slider-2" class="button"></a>
+            <a href="#slider-3" class="button"></a>
+            <a href="#slider-4" class="button"></a>
+            <a href="#slider-5" class="button"></a>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Figuras de colección</h2>
+    </div>
+    <div class="figuras">
+        <img src="./images/product1.png" alt="figura 1">
+        <img src="./images/product2.png" alt="figura 2">
+        <img src="./images/product3.png" alt="figura 3">
+    </div>
+    <div class="container">
+        <button class="button-more"><i class="fas fa-arrow-right"></i> Más</button> 
+    </div>
 </body>
+
 </html>

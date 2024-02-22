@@ -1,0 +1,64 @@
+.container {
+    text-align: center;
+
+    nav.nav {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+
+        ul {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                position: relative;
+                margin: 0 20px;
+
+                a {
+                    color: black;
+                    text-decoration: none;
+                }
+
+                &:hover {
+                    a {
+                        color: gray;
+                    }
+
+                    .submenu {
+                        display: block;
+                    }
+                }
+
+                .submenu {
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    width: 100%;
+                    background-color: white;
+                    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+                    z-index: 1;
+                    padding: 10px;
+
+                    li {
+                        a {
+                            display: block;
+                            color: black;
+                            font-size: 13px;
+
+                            &:hover {
+                                color: gray;
+                            }
+                        }
+
+                        &:not(:last-child) {
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
