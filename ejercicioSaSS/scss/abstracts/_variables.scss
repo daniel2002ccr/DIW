@@ -1,0 +1,19 @@
+$breakpoint-xl: 1200px;
+$breakpoint-lg: 1000px;
+$breakpoint-md: 760px;
+$breakpoint-sm: 560px;
+
+$tamanos: (
+  pequena: 0.8rem,
+  normal: 1rem,
+  grande: 1.2rem,
+  xl: 1.5rem
+);
+
+$colores: (
+  primario: #4e4e4e,
+  secundario: #000000,
+);
+
+$nav-link-color: #000;
+$nav-link-hover-color: #b4b4b4;

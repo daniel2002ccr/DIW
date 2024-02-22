@@ -1,0 +1,110 @@
+.footer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    color: #333;
+
+    .footer-column {
+        flex: 1;
+        padding: 0 20px;
+
+        h2 {
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+
+            li {
+                a {
+                    text-decoration: none;
+                    color: map-get($colores, 'primario');
+                    line-height: map-get($tamanos, 'grande');
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        p {
+            margin: 5px 0;
+            text-align: center;
+        }
+
+        &:last-child {
+            p {
+                text-decoration: underline;
+                color: map-get($colores, 'primario');
+                text-align: center;
+            }
+        }
+
+        .newsletter-form,
+        .newsletter-form1 {
+            display: flex;
+            width: auto;
+            margin: auto;
+
+            input,
+            button {
+                width: 100%;
+                margin-bottom: 10px;
+                margin-right: 10px;
+                padding: 10px;
+            }
+
+            button {
+                width: 300px;
+            }
+
+            .name-inputs {
+                display: flex;
+
+                input {
+                    flex: 1;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+
+        .social-icon {
+            margin: 0 10px;
+            font-size: 1.5rem;
+            display: inline-block;
+
+            .fa-facebook {
+                color: blue;
+            }
+
+            .fa-youtube {
+                color: red;
+            }
+
+            .fa-google-plus-g {
+                color: rgb(255, 85, 0);
+            }
+
+            .fa-twitter {
+                color: rgb(0, 174, 255);
+            }
+
+            .fa-linkedin-in {
+                color: rgb(89, 52, 255);
+            }
+
+            .fa-instagram {
+                color: rgb(0, 255, 98);
+            }
+        }
+    }
+}

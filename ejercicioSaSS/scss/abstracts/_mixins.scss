@@ -1,0 +1,32 @@
+@mixin centrado-horizontal {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  @mixin responsive-tamano {
+    @if $breakpoint-xl {
+      font-size: map-get($tamanos, 'xl');
+    } @else if $breakpoint-lg {
+      font-size: map-get($tamanos, 'grande');
+    } @else if $breakpoint-md {
+      font-size: map-get($tamanos, 'normal');
+    } @else if $breakpoint-sm {
+      font-size: map-get($tamanos, 'pequena');
+    }
+  }
+  
+  @mixin detalles-producto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    transform: translate(-50%, -50%);
+    border: 2px rgb(94, 94, 94) solid;
+    border-radius: 7px;
+    box-sizing: border-box;
+    text-align: center;
+    display: none;
+  }

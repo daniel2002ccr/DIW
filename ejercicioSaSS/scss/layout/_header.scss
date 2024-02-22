@@ -26,15 +26,26 @@ header {
 
                 a {
                     text-decoration: none;
-                    color: black;
+                    color: map-get($map: $colores, $key: primario);
                     font-weight: bold;
                 }
                  &:hover {
                         a {
-                            color: gray;
+                            color: $nav-link-hover-color
                         }
                     }
             }
+            @media (max-width: $breakpoint-lg) {
+                nav {
+                  margin: 0 20px;
+                }
+              }
+        
+              @media (max-width: $breakpoint-md) {
+                nav {
+                  margin: 0px;
+                }
+              }
         }
     }
 }

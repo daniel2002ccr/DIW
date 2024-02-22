@@ -17,7 +17,7 @@
                 margin: 0 20px;
 
                 a {
-                    color: black;
+                    color: map-get($map: $colores, $key: primario);
                     text-decoration: none;
                 }
 

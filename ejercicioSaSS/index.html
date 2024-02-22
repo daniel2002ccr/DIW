@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -45,34 +45,139 @@
         </nav>
     </div>
     <div class="carousel">
-        <div class="wrapper">
-            <div class="wrapper-holder">
-                <div id="slider-1"><img src="./images/img1.jpg" alt="imagen 1"></div>
-                <div id="slider-2"><img src="./images/img2.jpg" alt="imagen 2"></div>
-                <div id="slider-3"><img src="./images/img3.jpg" alt="imagen 3"></div>
-                <div id="slider-4"><img src="./images/img4.jpg" alt="imagen 4"></div>
-                <div id="slider-5"><img src="./images/img5.jpg" alt="imagen 5"></div>
+        <div class="slide" id="slide-1"></div>
+        <div class="slide" id="slide-2"></div>
+        <div class="slide" id="slide-3"></div>
+        <div class="slide" id="slide-4"></div>
+        <div class="slide" id="slide-5"></div>
+    
+        <div class="slides">
+          <div class="slide" id="slide-1">
+            <img src="images/img1.jpg" alt="Comic Image 1">
+            <div class="slide-caption">
+              <h2>Maus</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+              <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
+          </div>
+    
+          <div class="slide" id="slide-2">
+            <img src="images/img2.jpg" alt="Comic Image 2">
+            <div class="slide-caption">
+              <h2>V de Vendetta</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+              <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
+    
+          <div class="slide" id="slide-3">
+            <img src="images/img3.jpg" alt="Comic Image 3">
+            <div class="slide-caption">
+              <h2>From Hell</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+              <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
+    
+          <div class="slide" id="slide-4">
+            <img src="images/img4.jpg" alt="Comic Image 4">
+            <div class="slide-caption">
+              <h2>Gorazde</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+              <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
+    
+          <div class="slide" id="slide-5">
+            <img src="images/img5.jpg" alt="Comic Image 5">
+            <div class="slide-caption">
+              <h2>Superman</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+              <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
         </div>
-        <div class="button-holder">
-            <a href="#slider-1" class="button"></a>
-            <a href="#slider-2" class="button"></a>
-            <a href="#slider-3" class="button"></a>
-            <a href="#slider-4" class="button"></a>
-            <a href="#slider-5" class="button"></a>
-        </div>
-    </div>
+      </div>
     <div class="container">
         <h2>Figuras de colección</h2>
     </div>
     <div class="figuras">
-        <img src="./images/product1.png" alt="figura 1">
-        <img src="./images/product2.png" alt="figura 2">
-        <img src="./images/product3.png" alt="figura 3">
+        <div class="figura">
+            <img src="./images/product1.png" alt="figura 1">
+            <div class="detallesProducto">
+                <h2>Mazinger z</h2>
+                <p>Precio: 150€</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div class="figura">
+            <img src="./images/product2.png" alt="figura 2">
+            <div class="detallesProducto">
+                <h2>Superman</h2>
+                <p>Precio: 30€</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+        <div class="figura">
+            <img src="./images/product3.png" alt="figura 3">
+            <div class="detallesProducto">
+                <h2>Batman y Joker</h2>
+                <p>Precio: 50€</p>
+                <button>Comprar</button>
+            </div>
+        </div>
     </div>
-    <div class="container">
-        <button class="button-more"><i class="fas fa-arrow-right"></i> Más</button> 
+    <div class="boton">
+        <div class="boton-contenido">
+            <span class="contenido">></span>
+            <span class="mas">Más</span>
+        </div>
     </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-column">
+            <h2>Más información</h2>
+            <ul>
+                <li><a href="#">Empresa</a></li>
+                <li><a href="#">Ventas</a></li>
+                <li><a href="#">Donaciones</a></li>
+                <li><a href="#">Política de privacidad</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h2>Newsletter</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quasi architecto accusamus velit aliquam. Reprehenderit ipsa aliquam, rem, voluptatem quibusdam omnis mollitia, non nihil dicta vitae numquam sed ratione recusandae.
+            <form class="newsletter-form">
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Apellido">
+            </form>
+            <form class="newsletter-form1">
+                <input type="email" placeholder="Email">
+                <button type="submit">Sign Up</button>
+            </form>
+            <div class="social-icons">
+                <a href="#" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
+                <a href="#" target="_blank" class="social-icon"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-column">
+            <h2>Tienda de comics</h2>
+            <p>666 666 666</p>
+            <p>info@gmail.com</p>
+            <p>Santana, Spain</p>
+            <p>Envíos gratis con más de 50€</p>
+        </div>
+    </footer>
 </body>
 
 </html>

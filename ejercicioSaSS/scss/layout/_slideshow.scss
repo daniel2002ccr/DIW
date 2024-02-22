@@ -1,0 +1,74 @@
+.carousel {
+    margin-top: 12vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    .slides {
+        width: 100%;
+        height: 600px;
+        position: relative;
+
+        @for $i from 1 through 5 {
+            $delay: (-4s * $i);
+
+            #slide-#{$i} {
+                opacity: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                transition: opacity 0.5s ease-in-out;
+                animation: animacionCarousel 150s infinite; 
+                animation-delay: $delay;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                .slide-caption {
+                    position: absolute;
+                    bottom: 40px;
+                    left: 70px;
+                    background-color: rgba(255, 255, 255, 0.7);
+                    padding: 20px;
+                    width: auto;
+                    max-width: calc(100% - 40px);
+                    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+
+                    h2 {
+                        font-size: 1.5rem;
+                        margin: 0;
+                    }
+
+                    p {
+                        font-size: 1rem;
+                        margin: 5px 0 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes animacionCarousel {
+    @for $j from 0 through 10 {
+        $start: $j * 10%;
+        $end: ($j + 1) * 10%;
+
+        #{$start}, #{$end} {
+            opacity: if($j % 2 == 0, 1, 0);
+            z-index: if($j % 2 == 0, 2, 1);
+        }
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .carousel {
+        margin-top: 32vh;
+    }
+}
